@@ -1,0 +1,28 @@
+{% load static %}
+
+<html>
+    <head>
+        <title>Hi</title>
+        <link rel="stylesheet" href="{% static 'css/home.css' %}">
+        <script src="{% static 'js/home.js' %}"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@700&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <div class="header">
+            <div class="header_nav">
+                <a href="" class="header_link">Den</a>
+                <a href="" class="header_link">Projects</a>
+            </div>
+            <div class="header_info">
+                <a href="" class="header_link">?</a>
+            </div>
+        </div>
+        <div class="content">
+            {% block content %}{% endblock content %}
+        </div>
+        <div class="footer">
+            
+        </div>
+    </body>
+</html>
